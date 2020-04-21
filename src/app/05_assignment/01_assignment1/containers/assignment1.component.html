@@ -1,0 +1,31 @@
+<div class="assignment1">
+  <div class="alert alert-info">Follow the steps:</div>
+  <ul class="list-group">
+    <li class="list-group-item">Create an input of type "text"</li>
+    <li class="list-group-item">Attach a template reference variable to the input</li>
+    <li class="list-group-item">Attach an "input" event passing in the value of textbox to the handler</li>
+    <li class="list-group-item">Create handler in the component's class</li>
+    <li class="list-group-item">Display the result on the page via string interpolation</li>
+  </ul>
+  <div class="container your-code">
+    <div class="card text-white bg-info mb-3 mt-3" style="max-width: 60rem;">
+      <div class="card-header">
+        Input-Text
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <input type="text"
+              class="form-control"
+              id="input_text"
+              placeholder="Enter your text"
+              #element
+              (input)="onTextInput(element.value)">
+          </div>
+          <h4>{{ result }}</h4>
+        </form>   
+        </div>
+    </div>
+     
+  </div>
+</div>
